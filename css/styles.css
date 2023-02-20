@@ -1,0 +1,156 @@
+/* ============================================= */
+/* Utilities Imports */
+/* ============================================= */
+/* Colors */
+/* Fonts */
+/* Gutters */
+/* Media Queries */
+/* ============================================= */
+/* Base Imports */
+/* ============================================= */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #404040;
+  margin: 0;
+}
+
+.intro {
+  background: #9480e4 url("../images/intro-bg.png");
+  background-size: cover;
+  min-height: 250px;
+}
+
+.intro, .main-content {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.intro {
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5em;
+  text-shadow: 0 2px #816fca;
+}
+
+h2 {
+  font-size: 2.25em;
+  margin: 0.5em 0px;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.6875em;
+}
+
+.beta-text {
+  font-weight: 900;
+}
+
+.subheading {
+  color: #575757;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+}
+
+.beta-text, .subheading {
+  text-transform: uppercase;
+}
+
+.main-content {
+  padding-top: 2.5em;
+}
+
+.fine-print {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #858585;
+}
+
+/* ============================================= */
+/* Components Imports */
+/* ============================================= */
+.img-main {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  .intro, .main-content {
+    width: 50%;
+  }
+  .intro {
+    min-height: 100vh;
+  }
+  .main-content {
+    justify-content: center;
+    padding-top: 0;
+  }
+  h1 {
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 2.625rem;
+  }
+  .beta-text {
+    font-size: 1.25rem;
+  }
+}
+input {
+  padding: 0.5em;
+  margin-bottom: 0.75em;
+  border: 2px solid #d1d5db;
+}
+
+input:focus {
+  outline: none;
+  border-color: #8a71ec;
+  background-color: #e6e8ec;
+}
+
+input,
+button {
+  font-family: inherit;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 1em 0;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #8a71ec;
+  margin-top: 1em;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #b7a7f6;
+}
+
+/*# sourceMappingURL=styles.css.map */

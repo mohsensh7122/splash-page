@@ -1,0 +1,45 @@
+.intro {
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-weight: $font-light;
+    font-size: $font-very-large;
+    text-shadow: 0 2px #816fca;
+}
+
+h2 {
+    font-size: $font-large;
+    margin: $small-gutter 0px;
+}
+
+p {
+    font-size: $font-medium;
+    line-height: calc($font-medium * 1.35);
+}
+
+.beta-text { 
+    font-weight: 900;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+
+.beta-text, .subheading {
+    text-transform: uppercase;
+}
+
+.main-content {
+    padding-top: 2.5em; 
+
+}
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}

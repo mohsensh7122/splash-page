@@ -1,0 +1,7 @@
+.intro {
+    @include flexy(flex, column, center);
+}
+
+.main-content {
+    @include flexy(flex, column, null, center);
+}

@@ -1,0 +1,16 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin: 0;
+}
+
+.intro {
+    background: #9480e4 url("../images/intro-bg.png");
+    background-size: cover;
+    min-height: 250px;
+}
+
+.intro, .main-content {
+    padding-left: 2em; 
+    padding-right: 2em;
+}
