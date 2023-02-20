@@ -118,7 +118,7 @@ p {
     width: 50%;
   }
   .intro {
-    min-height: 100vh;
+    height: 100vh;
   }
   .main-content {
     justify-content: center;
