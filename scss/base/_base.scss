@@ -1,16 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #404040;
     margin: 0;
 }
 
 .intro {
     background: #9480e4 url("../images/intro-bg.png");
     background-size: cover;
-    min-height: 250px;
+    min-height: 300px;
 }
 
 .intro, .main-content {
     padding-left: 2em; 
     padding-right: 2em;
+}
+
+.top-text {
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    order: -1;
+    margin: 0 auto;
 }

@@ -8,21 +8,35 @@
 /* ============================================= */
 /* Base Imports */
 /* ============================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #404040;
   margin: 0;
 }
 
 .intro {
   background: #9480e4 url("../images/intro-bg.png");
   background-size: cover;
-  min-height: 250px;
+  min-height: 300px;
 }
 
 .intro, .main-content {
   padding-left: 2em;
   padding-right: 2em;
+}
+
+.top-text {
+  padding-top: 0.25em;
+  border-top: 5px solid;
+  order: -1;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #404040;
 }
 
 .intro {
@@ -47,6 +61,11 @@ p {
 }
 
 .beta-text {
+  font-weight: 900;
+}
+
+.top-text {
+  font-size: 0.875rem;
   font-weight: 900;
 }
 
@@ -81,7 +100,7 @@ p {
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .main-content {
@@ -90,7 +109,7 @@ p {
   align-items: center;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   body {
     display: flex;
     flex-direction: row;
@@ -115,12 +134,16 @@ p {
     font-size: 1.25rem;
   }
 }
+.main-content p,
+form {
+  max-width: 450px;
+}
+
 input {
   padding: 0.5em;
   margin-bottom: 0.75em;
   border: 2px solid #d1d5db;
 }
-
 input:focus {
   outline: none;
   border-color: #8a71ec;
@@ -148,7 +171,6 @@ button {
   background-color: #8a71ec;
   margin-top: 1em;
 }
-
 .btn-primary:hover, .btn-primary:focus {
   background-color: #b7a7f6;
 }

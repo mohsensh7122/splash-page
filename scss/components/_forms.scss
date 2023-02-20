@@ -1,14 +1,20 @@
+.main-content p,
+form {
+    max-width: 450px;
+}
+
 input {
     padding: 0.5em;
     margin-bottom: 0.75em;
     border: 2px solid #d1d5db;
+
+    &:focus {
+        outline: none;
+        border-color: $color-primary;
+        background-color: #e6e8ec;
+    }
 }
 
-input:focus {
-    outline: none;
-    border-color: $color-primary;
-    background-color: #e6e8ec;
-}
 
 input,
 button {
@@ -29,11 +35,13 @@ button {
 .btn-primary {
     color: white;
     background-color: #8a71ec;
-    margin-top: 1em;    
+    margin-top: 1em;
+    
+    &:hover, &:focus {
+        background-color: #b7a7f6;
+    }
 }
 
-.btn-primary:hover, .btn-primary:focus {
-    background-color: #b7a7f6;
-}
+
 
    

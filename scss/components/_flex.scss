@@ -1,5 +1,5 @@
 .intro {
-    @include flexy(flex, column, center);
+    @include flexy(flex, column, space-between);
 }
 
 .main-content {
